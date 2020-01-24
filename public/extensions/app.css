@@ -1,0 +1,293 @@
+.my-table {
+  width: 100%;
+  margin: 0;
+}
+
+
+.time-slot {
+  /*background-color: #E7EAED;*/
+  background-color: #ef8200;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  width: 100%;
+}
+
+.session-slot {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.session-time {
+  /* background-color: #EFF5FC; */
+  color: #666666;
+  padding-right: 3px;
+}
+
+.start-time {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.end-time {
+  color: #aaaaaa;
+  border-bottom: 1px solid #eee;
+  padding-right: 3px;
+  vertical-align: center;
+}
+
+.session-info {
+  position: relative;
+  float: left;
+  word-wrap: break-word; 
+}
+
+.session-title {
+  color: #052040;
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: 1.3em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.plus-title {
+  color: #ef8200;
+}
+
+.session-speaker {
+  color: #052040;
+  word-wrap: break-word;
+  font-size: 1.1em;
+  padding: 2px;
+  cursor: pointer;  
+}
+
+.session-button {
+  vertical-align: center;
+  cursor: pointer;
+}
+
+.button-add-session {
+  border-radius: 40%;
+  border: none;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.bottom-row {
+  margin-bottom: 10px;
+}
+
+.session-room {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+
+.added-button {
+  border-radius: 50%;
+  color: #25B010;
+}
+
+.add-button {
+  background-color: white;
+  border-radius: 60%;
+  color: #aaaaaa;
+}
+
+.session-header {
+  background-color: #555;
+  color: white;
+}
+
+.session-description {
+  font-size: 14px;
+}
+
+.speaker-bio {
+  font-size: 12px;
+}
+
+
+div.mobile-device-layout td.top-bar, div.mobile-device-layout div.top-bar {
+  height: 100px;
+  background: #555;
+  color: white;
+}
+
+div.mobile-device-layout td.bottom-bar, div.mobile-device-layout div.bottom-bar {
+  height: 77px;
+  color: white;
+}
+
+.speaker-avatar  {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.speaker-image {
+  vertical-align: top;
+  padding-left: 8px;
+  max-width: 10%;
+}
+
+.table-session-info {
+  color: #555;
+  max-height: 50%;
+  max-width: 98%;
+  margin-right: 0;
+}
+
+.session-bio {
+  vertical-align: top;
+}
+
+.speaker-name {
+  color: black;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.table-session-info td {
+  margin: 0;
+  padding: 2px;
+}
+
+.table-session-info th {
+  padding: 4px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+
+
+
+html,
+body,
+#pui {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.white-and-blue,
+.white-and-blue.blueprint-defaults.blueprint-output-field {
+  color: white;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 481px) {
+  .white-and-blue,
+  .white-and-blue.blueprint-defaults.blueprint-output-field {
+    color: #2980B9;
+    font-size: 0.85rem; 
+  }
+}
+.__plus--btn,
+.__plus--img,
+.__plus--msg {
+  position: unset!important;
+}
+
+.app-layout > .puiresp > div:nth-of-type(1) {
+  display: grid; 
+  align-content: center; 
+  align-items: center; 
+  justify-content: end; 
+  justify-items: end;
+  grid-template-rows: 100% 0;
+  grid-template-columns: 1fr;
+}
+
+.app-layout > .puiresp > div:nth-of-type(3) {
+  display: grid; 
+  align-content: center; 
+  align-items:center; 
+  justify-content: space-around; 
+  justify-items: center;
+  grid-template-rows: 100% 0;
+  grid-template-columns: auto;
+}
+
+.app-layout > .puiresp > div:nth-of-type(4) {
+  display: grid; 
+  align-content: center; 
+  align-items:center; 
+  justify-content: center; 
+  justify-items: center;
+  grid-template-rows: 100% 0;
+  grid-template-columns: 1fr;
+}
+
+.app-layout > .puiresp > div:nth-of-type(5) {
+  display: grid; 
+  align-content: center; 
+  align-items:center; 
+  justify-content: center; 
+  justify-items: center;
+  grid-template-rows: 100% 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #2980B9;
+  border-bottom: 1px solid #2980B9;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td.session-speaker {
+  color: #052040;
+  word-wrap: break-word;
+  font-size: .85rem;
+  white-space: normal;
+  padding: 2px;
+  cursor: pointer;
+}
+
+th.session-title {
+  color: #052040;
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+th.plus-slot {
+  background:  #3382C4;
+}
+
+td.session-room {
+  padding: 2px;
+  cursor: pointer;
+  color: #2980B9;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+td.session-button {
+  border-bottom: 1px solid #eee;
+  width: 75px;
+}
+
+th[class*="-time"] {
+  width: 5rem;
+  white-space: normal;
+  vertical-align: middle;
+  padding-left: 0.25rem;
+  padding-right: 0.75rem;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+th.mean-time {
+  color: #aaaaaa;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 2.2rem;
+}
+

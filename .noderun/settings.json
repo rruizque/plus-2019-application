@@ -1,0 +1,13 @@
+{
+  "current git repository": "",
+  "git repositories": [
+    ""
+  ],
+  "app start": "app.js",
+  "routes": {
+    "admin/feedback.js": {
+      "method": "get",
+      "route": "admin/feedback"
+    }
+  }
+}

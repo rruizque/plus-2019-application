@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <title>Session Feedback</title>
+    <style>
+
+      #container {
+        padding-left: 2%;
+        font-family: Arial, Helvetica;
+        text-align: left;
+      }
+      .session-container  {
+        padding-bottom: 2%;
+      }
+
+      .main-table {
+        text-align: left;
+      }
+
+      .comments-table {
+        text-align: left;
+        padding: 0.5% 0 1% 1%;
+        //border-bottom: 1.3px solid #2C3E50;
+      }
+
+      .comments-table th {
+        padding: 0 1% 1% 0;
+        vertical-align: top;
+        color: #2C3E50;
+      }
+
+      .comments-table td {
+        vertical-align: top;
+        padding-bottom: 0.5%;
+      }
+
+      .raiting-table {
+        text-align: left;
+        padding: 0.5% 0 1% 1%;
+      }
+
+      .raiting-table th {
+        padding: 0 1% 1% 0;
+        vertical-align: top;
+        color: #2C3E50;
+        min-width: 70%;
+      }
+
+      .raiting-table td {
+        padding-left: 2%;
+        padding-bottom: 0.5%;
+        color: #082B76;
+        font-weight: bold;
+      }
+
+      .raiting-table tr {
+        padding-bottom: 1%;
+      }
+
+      .session-title {
+        font-size: 1.5em;
+        color: #2980B9;
+      }
+
+      .table-header {
+        font-size: 1.3em;
+        color: #2C3E55;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id = "container">
+    <% sessions.forEach(session => { 
+        if (session.feedback.length > 0 || session.ratings.length > 0) {
+    %>
+
+      <br/> 
+      <div class = "session-container">
+        <table class = "main-table">
+          <tr>
+            <th class = "session-title"><%= session.title %> (<%= session.speaker1 + (session.speaker2 ? ' + ' + session.speaker2 : '') %>)</th> <br/>
+          </tr>
+           <table class = "comments-table">
+                <tr>
+                  <th class = "table-header">Comments</th>
+                </tr>
+            <% session.feedback.forEach(feedback => { %>
+             
+                <tr>
+                  <th class = "feedback-user"> <%= feedback.user %>: </th> 
+                  <td><%= feedback.comment %></td>
+                </tr>
+            <% }); %>
+            </table>
+
+            <table class = "raiting-table">
+            <tr>
+              <th class = "table-header">Raitings:</th>
+            </tr>
+            <% session.ratings.forEach(rating => { %>
+                <tr>
+                  <th><%= rating.user %>'s rating: </th> 
+                  <td class = "score"><%= rating.rating %></td>
+                </tr>
+            <% }); %>
+            </table>
+        
+        </table>
+        <% 
+            }
+          }) 
+        %>
+      </div>
+    </div>
+  </body>
+
+</html>
